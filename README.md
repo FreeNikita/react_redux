@@ -66,3 +66,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+ "classnames": "^2.2.6",
+    "ramda": "^0.26.1",
+    "react-redux": "^7.1.0",
+ 
+    "superagent": "^5.1.0"
