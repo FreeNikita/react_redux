@@ -1,7 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-const Phones = () => (
-  <div>Main </div>
-);
+import { fetchPhones } from 'actions';
 
-export default Phones;
+class Phones extends Component {
+  componentDidMount() {
+    const { fetchPhones } = this.props;
+    fetchPhones();
+  }
+
+  render() {
+    return (
+      <div>Phones</div>
+    );
+  }
+}
+
+const mapDispatchToProps = {
+  fetchPhones,
+};
+
+export default connect(null, mapDispatchToProps)(Phones);

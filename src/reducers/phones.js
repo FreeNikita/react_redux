@@ -1,5 +1,3 @@
-const initialState = {
-
-};
+const initialState = {};
 
 export default (state = initialState) => state;

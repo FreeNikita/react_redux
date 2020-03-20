@@ -5,7 +5,7 @@ import { Switch, Route as ReactRoute } from 'react-router';
 const Route = () => (
   <Switch>
     {routing.map(({ url, component, exact }) => (
-      <ReactRoute path={url} component={component} exact={exact} />
+      <ReactRoute path={url} component={component} exact={exact} key={url} />
     ))}
   </Switch>
 );
