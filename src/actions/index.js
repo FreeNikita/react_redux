@@ -5,6 +5,8 @@ import {
   FETCH_CATEGORIES_START, FETCH_CATEGORIES_SUCCESS, FETCH_CATEGORIES_FAILURE,
   ADD_PHONE_TO_BASKET,
   SEARCH_PHONE,
+  REMOVE_PHONE_FROM_BASKET,
+  CLEAN_BASKET,
 } from 'constants/actionsType';
 import {
   fetchPhones as fetchPhonesApi,
@@ -97,4 +99,22 @@ export const searchPhone = (text) => (dispatch) => {
     type: SEARCH_PHONE,
     payload: text,
   });
+};
+
+export const removePhoneFromBasket = (id) => async (dispatch) => {
+  dispatch({
+    type: REMOVE_PHONE_FROM_BASKET,
+    payload: id,
+  });
+};
+
+export const cleanBasket = () => (dispatch) => {
+  dispatch({
+    type: CLEAN_BASKET,
+  });
+};
+
+export const basketCheckout = (phones) => () => {
+  // eslint-disable-next-line no-alert
+  alert(JSON.stringify(phones));
 };

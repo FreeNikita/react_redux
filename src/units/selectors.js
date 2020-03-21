@@ -29,4 +29,18 @@ export const getTotalBasketPrice = (state) => R.compose(
   R.map((id) => getPhoneById(state, id)),
 )(state.basket);
 
+export const getBasketPhonesWithCount = (state) => {
+  const phoneCount = (id) => R.compose(
+    R.length,
+    R.filter((basketId) => R.equals(id, basketId)),
+  )(state.basket);
+  const phoneWithCount = (phone) => R.assoc('count', phoneCount(phone.id), phone);
+
+  const uniqueIds = R.uniq(state.basket);
+  return R.compose(
+    R.map(phoneWithCount),
+    R.map((id) => getPhoneById(state, id)),
+  )(uniqueIds);
+};
+
 export const getCategories = (state) => R.values(state.categories);
