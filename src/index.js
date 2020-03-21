@@ -8,7 +8,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
 import createRootReducer from 'reducers';
 
-import Layout from 'components/layout';
+import Route from 'components/route';
 import './main.css';
 
 
@@ -23,7 +23,7 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <Layout />
+      <Route />
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root'),
