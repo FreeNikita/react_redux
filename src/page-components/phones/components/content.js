@@ -1,14 +1,21 @@
 import React, { useEffect } from 'react';
+import { withRouter } from 'react-router';
+import { compose } from 'redux';
 import { Phone } from 'page-components/phones/components/index';
 import Loading from 'components/loading';
 import { getPhones } from 'units/selectors';
-import { fetchPhones, loadMorePhones } from 'actions';
+import {
+  fetchPhones, loadMorePhones, fetchCategories,
+} from 'actions';
 import { connect } from 'react-redux';
 
-const Content = ({ fetchPhones, phones }) => {
+const Content = ({
+  fetchPhones, fetchCategories, fetchPhonesByCategory, phones,
+}) => {
   useEffect(() => {
     fetchPhones();
-  }, [fetchPhones]);
+    fetchCategories();
+  }, [fetchCategories, fetchPhones, fetchPhonesByCategory]);
 
   if (phones.length === 0) return <Loading />;
 
@@ -34,13 +41,17 @@ const Content = ({ fetchPhones, phones }) => {
   );
 };
 
-const mapStateToProps = (state) => ({
-  phones: getPhones(state),
+const mapStateToProps = (state, ownState) => ({
+  phones: getPhones(state, ownState),
 });
 
 const mapDispatchToProps = {
   fetchPhones,
   loadMorePhones,
+  fetchCategories,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Content);
+export default compose(
+  withRouter,
+  connect(mapStateToProps, mapDispatchToProps),
+)(Content);

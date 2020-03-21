@@ -5,6 +5,7 @@ import phones from 'reducers/phones';
 import phonesPage from 'reducers/phonesPage';
 import phonePage from 'reducers/phonePage';
 import basket from 'reducers/basket';
+import categories from 'reducers/categories';
 
 export default (history) => combineReducers({
   router: connectRouter(history),
@@ -12,4 +13,5 @@ export default (history) => combineReducers({
   phonesPage,
   phonePage,
   basket,
+  categories,
 });
