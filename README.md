@@ -36,5 +36,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Second part 
 
-- [ ] Connect to real API ( update logic "more phone")
+- [ ] Connect to real API
+- [ ] Update logic *MORE PHONE* (fix issue with key)
+- [ ] Add new action for *MORE PHONE*
+- [ ] Update logic GET_PHONE_BY_CATEGORY
 - [ ] Add new fetch *fetchPhoneByCategory*
