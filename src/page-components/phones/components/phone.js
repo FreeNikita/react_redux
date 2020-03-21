@@ -2,11 +2,11 @@ import React from 'react';
 import { take } from 'ramda';
 import { Link } from 'react-router-dom';
 
-const Phone = ({ phone, index }) => {
+const Phone = ({ phone }) => {
   const shortDescription = `${take(60, phone.description)}...`;
 
   return (
-    <div className="col-sm-4 col-lg-4 col-md-4 book-list" key={index}>
+    <div className="col-sm-4 col-lg-4 col-md-4 book-list">
       <div className="thumbnail">
         <img
           className="img-thumbnail"

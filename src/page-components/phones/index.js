@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchPhones, loadMorePhones } from 'actions';
 import { getPhones } from 'units/selectors';
+import Loading from 'components/loading';
 import { Phone } from './components';
 
 
@@ -10,11 +11,13 @@ const Phones = ({ fetchPhones, loadMorePhones, phones }) => {
     fetchPhones();
   }, [fetchPhones]);
 
+  if (phones.length === 0) return <Loading />;
+
   return (
     <>
       <div className="books row">
-        {phones.map((phone, index) => (
-          <Phone phone={phone} index={index} key={phone.index} />
+        {phones.map((phone) => (
+          <Phone phone={phone} key={phone.id} />
         ))}
       </div>
       <div className="row">
