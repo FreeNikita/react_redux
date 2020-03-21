@@ -10,7 +10,7 @@ import {
 import { connect } from 'react-redux';
 
 const Content = ({
-  fetchPhones, fetchCategories, fetchPhonesByCategory, phones,
+  fetchPhones, fetchCategories, fetchPhonesByCategory, phones, loadMorePhones,
 }) => {
   useEffect(() => {
     fetchPhones();
