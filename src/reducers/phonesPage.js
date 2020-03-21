@@ -1,13 +1,19 @@
-import { indexBy, prop } from 'ramda';
+import { pluck } from 'ramda';
 import { FETCH_PHONES_SUCCESS } from 'constants/actionType';
 
-const initialState = {};
+const initialState = {
+  ids: [],
+};
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
     case FETCH_PHONES_SUCCESS: {
-      const newPhones = indexBy(prop('id'), payload);
-      return { ...state, ...newPhones };
+      return {
+        ...state,
+        ...{
+          ids: pluck('id', payload),
+        },
+      };
     }
     default:
       return state;

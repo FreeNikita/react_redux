@@ -18,5 +18,3 @@ export const fetchPhones = () => async (dispatch) => {
     });
   }
 };
-
-export const test = '';
