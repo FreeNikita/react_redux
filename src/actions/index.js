@@ -3,6 +3,7 @@ import {
   LOAD_MORE_PHONES_START, LOAD_MORE_PHONES_SUCCESS, LOAD_MORE_PHONES_FAILURE,
   FETCH_PHONE_BY_ID_START, FETCH_PHONE_BY_ID_SUCCESS, FETCH_PHONE_BY_ID_FAILURE,
   ADD_PHONE_TO_BASKET,
+  SEARCH_PHONE,
 } from 'constants/actionsType';
 import {
   fetchPhones as fetchPhonesApi,
@@ -67,5 +68,13 @@ export const addPhoneToBasket = (id) => (dispatch) => {
   dispatch({
     type: ADD_PHONE_TO_BASKET,
     payload: id,
+  });
+};
+
+
+export const searchPhone = (text) => (dispatch) => {
+  dispatch({
+    type: SEARCH_PHONE,
+    payload: text,
   });
 };
