@@ -1,10 +1,10 @@
 
 ## Basic project with using REACT + Redux-Thunk ( Practice )
 
-## Status 
+## Status ( START 18.03.2020 )
 
 ```diff
-! In Progress
+! In Progress 
 
 + FINISH FIRST PART (21.03.2020)
 ```
