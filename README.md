@@ -5,6 +5,8 @@
 
 ```diff
 ! In Progress
+
++ FINISH FIRST PART (21.03.2020)
 ```
 
 ## How to start project 
@@ -23,3 +25,16 @@ In the project directory, you can run:
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## First part
+
+- [x] Practice with Redux 
+- [x] Create basic shop 
+- [x] Use mocData
+- [x] Use Hook's
+- [x] Create some reducers
+
+## Second part 
+
+- [ ] Connect to real API ( update logic "more phone")
+- [ ] Add new fetch *fetchPhoneByCategory*
