@@ -2,7 +2,7 @@ import { prop } from 'ramda';
 
 import {
   FETCH_PHONE_BY_ID_SUCCESS,
-} from 'constants/actionType';
+} from 'constants/actionsType';
 
 const initialState = {
   id: null,

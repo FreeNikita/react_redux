@@ -1,5 +1,5 @@
 import { pluck, concat } from 'ramda';
-import { FETCH_PHONES_SUCCESS, LOAD_MORE_PHONES_SUCCESS } from 'constants/actionType';
+import { FETCH_PHONES_SUCCESS, LOAD_MORE_PHONES_SUCCESS } from 'constants/actionsType';
 
 const initialState = {
   ids: [],

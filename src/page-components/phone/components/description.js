@@ -4,7 +4,7 @@ import { getPhoneById } from 'units/selectors';
 import { connect } from 'react-redux';
 import Loading from 'components/loading';
 
-const FullFields = ({ phone }) => {
+const Description = ({ phone }) => {
   if (!phone) return <Loading />;
   const columnFields = compose(
     toPairs,
@@ -35,4 +35,4 @@ const mapStateToProps = (state) => ({
   phone: getPhoneById(state, state.phonePage.id),
 });
 
-export default connect(mapStateToProps, null)(FullFields);
+export default connect(mapStateToProps, null)(Description);

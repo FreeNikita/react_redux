@@ -4,13 +4,6 @@ import Layout from 'components/layout';
 
 export default () => (
   <Layout>
-    <div className="row">
-      <div className="col-md-9">
-        <Phone />
-      </div>
-      <div className="col-md-3">
-        Sidebar
-      </div>
-    </div>
+    <Phone />
   </Layout>
 );

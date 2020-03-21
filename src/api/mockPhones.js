@@ -1,6 +1,6 @@
 export default [
   {
-    id: 1,
+    id: '1',
     categoryId: '1',
     name: 'Apple iPhone 5c',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
@@ -15,7 +15,7 @@ export default [
     memory: '16GB, 32GB and RAM 1 GB',
   },
   {
-    id: 2,
+    id: '2',
     categoryId: '1',
     name: 'Apple iPhone 6',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
@@ -30,7 +30,7 @@ export default [
     memory: '16GB, 32GB and RAM 1 GB',
   },
   {
-    id: 3,
+    id: '3',
     categoryId: '4',
     name: 'Lenovo A6000',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
@@ -45,7 +45,7 @@ export default [
     memory: '16GB, 32GB and RAM 1 GB',
   },
   {
-    id: 4,
+    id: '4',
     categoryId: '5',
     name: 'Nokia Lumia 1520',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
@@ -60,7 +60,7 @@ export default [
     memory: '16GB, 32GB and RAM 1 GB',
   },
   {
-    id: 5,
+    id: '5',
     categoryId: '3',
     name: 'HTC One',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',
@@ -75,7 +75,7 @@ export default [
     memory: '16GB, 32GB and RAM 1 GB',
   },
   {
-    id: 6,
+    id: '6',
     categoryId: '2',
     name: 'Samsung Galaxy S6',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies lorem odio, at laoreet tellus sodales in. Nullam maximus eros ut tortor ultricies rutrum. Aliquam euismod lacus non est egesta',

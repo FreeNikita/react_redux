@@ -1,5 +1,5 @@
 import { indexBy, prop, assoc } from 'ramda';
-import { FETCH_PHONES_SUCCESS, LOAD_MORE_PHONES_SUCCESS, FETCH_PHONE_BY_ID_SUCCESS } from 'constants/actionType';
+import { FETCH_PHONES_SUCCESS, LOAD_MORE_PHONES_SUCCESS, FETCH_PHONE_BY_ID_SUCCESS } from 'constants/actionsType';
 
 const initialState = {};
 

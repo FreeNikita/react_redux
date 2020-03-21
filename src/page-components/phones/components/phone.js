@@ -1,8 +1,10 @@
 import React from 'react';
 import { take } from 'ramda';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { addPhoneToBasket } from 'actions';
 
-const Phone = ({ phone }) => {
+const Phone = ({ phone, addPhoneToBasket }) => {
   const shortDescription = `${take(60, phone.description)}...`;
 
   return (
@@ -28,6 +30,7 @@ const Phone = ({ phone }) => {
             <button
               type="button"
               className="btn btn-primary"
+              onClick={() => addPhoneToBasket(phone.id)}
             >
               Buy Now!
             </button>
@@ -44,4 +47,9 @@ const Phone = ({ phone }) => {
   );
 };
 
-export default Phone;
+
+const mapDispatchToProps = {
+  addPhoneToBasket,
+};
+
+export default connect(null, mapDispatchToProps)(Phone);
