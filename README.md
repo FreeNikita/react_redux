@@ -36,6 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Second part 
 
+- [ ] Save state after rerender app
 - [ ] Connect to real API
 - [ ] Update logic *MORE PHONE* (fix issue with key)
 - [ ] Add new action for *MORE PHONE*
